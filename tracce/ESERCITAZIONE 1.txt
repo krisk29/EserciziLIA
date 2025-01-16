@@ -1,0 +1,64 @@
+1)Definire una funzione subsetsum che prende in input un intero x e una lista di interi s e restituisce una lista contenente tutte le sottoliste s1 di s tali che la somma degli elementi di s1 è uguale a x
+
+
+subsetsum :: Int-> [Int] -> [[Int]]
+
+
+Esempi:
+
+subsetsum 10 [2, -1, 4, 5, 3, 6, 1] == [[3,6,1],[4,6],[4,5,1],[-1,5,6],[-1,4,6,1],[2,5,3],[2,4,3,1],[2,-1,3,6],[2,-1,5,3,1],[2,-1,4,5]]
+
+subsetsum 10 [2, -1, 4, 3] == [ ]
+
+2)Si considere il tipo
+
+data AlberoBInt = Vuoto | Nodo Int AlberoBInt AlberoBInt
+
+Scrivere una funzione pathtutto x a che restituisce vero se esiste un nodo foglia di a tale che il cammno dalla radice verso questo nodo foglia è composto da nodi che hanno tutti valore x.
+
+Esempio
+
+ si considerino:
+albero1 = Nodo 1 (Nodo 1 Vuota Vuota) (Nodo 3 Vuota Vuota) 
+albero2 = Vuota 
+albero3 = Nodo 1 (Nodo 5 Vuota Vuota) (Nodo 1 (Nodo 7 Vuota Vuota) Vuota)
+
+pathtutto 1 albero1 = true
+pathtutto 1 albero2 =  false
+pathtutto 1 albero3 = false
+
+3)Qual'è il tipo dell'espressione seguente?
+
+(\x -> x + 1)
+
+
+
+Motivare la risposta.
+
+4)Definire un predicato prolog zipunequals/3 che abbia come primo e secondo termine due liste L1 e L2 e come terzo termine una lista L3 tali che:
+
+ L3 contiene una sequenza di termini f(x,y) che corrispondono alle posizioni i-esime di L1 e L2 tali che x e y sono i termini che appaiono in posizione i-esima in L1 e L2 rispettivamente e y e x non unifica con y. 
+
+esempio:
+
+goal:  zipunequals([1,2,3],[6,2,1], L3).
+
+risultato: L3 = [f(1,6),f(3,1)]
+
+
+il predicato deve funzionare (almeno) in modalità +, +, -
+
+
+5)Supponendo di avere una base di fatti per i seguenti predicati: persona/2, amico/2, maschio/1, femmina/1, dove persona contenga come primo termine il nome della persona e come secondo la sua età-
+
+Si definiscano i predicati seguenti:
+
+soloamicigrandi(X): vero se e solo X ha solamente amici più grandi di lui
+amicistessaeta(X): vero se e solo tutti gli amici di X hanno la medesima età
+stessaetadegliamici(X,Y): vero se e solo se X e Y hanno degli insiemi di amici AX e AY tali che la somma delle età degli amici in AX e AY coincidano
+
+6)Riportare la definizione di implicazione (logical entailment) fra due formule logiche.
+
+
+Riportare un algoritmo in grado di verificare se due formule logiche proposizionali sono tali che la prima implica la  seconda.
+

@@ -1,0 +1,34 @@
+1)Definire una funzione removeElementsByValues che prende in input due liste di interi: values e filters e  restituisce una nuova lista contenente solo gli elementi di values che non appaiono nella lista filters  nell'ordine in cui appaiono nella lista values. 
+
+removeElementsByValues :: [Int] -> [Int] -> [Int]
+
+Esempio:
+
+removeElementsByIndices [1,4,2,1] [2,1] restituisce [4]
+
+2)Scrivere una funzione sumOfLists che riceve in input una lista di liste di numeri l e restituisce una lista di numeri l1 tale che ogni elemento in posizione i-esima di l1 corrisponda alla somma degli elementi nella lista in posisione i-esima di l
+
+sumoflists :: Num a => [[a]] -> [a]
+
+Esempio
+ sumoflists [[1,5,3],[4, -2]] = [9,2]
+
+3)Qual'è il tipo dell'espressione seguente?
+
+filter (==1)
+
+
+
+Motivare la risposta.
+
+4)DEfinire un predicato prolog sottoliste_crescenti/2
+
+5)Supponendo di avere una base di fatti per i seguenti predicati: persona/2, amico/2, maschio/1, femmina/1, dove persona contenga come primo termine il nome della persona e come secondo la sua età-
+
+Si definiscano i predicati seguenti:
+
+p1(X): vero se e solo X tutte le amiche femmine di X sono più grandi di almeno un amico maschio di X
+p2(X): vero se e solo se almeno uno degli amici più anziani di X (che non sono più piccoli di un altro amico di X) è maschio
+stessaetadegliatri(X): vero se e solo se X ha un amico Y la cui età è uguale alla somma delle età degli altri amici di X
+
+6)Riportare la definizione di most general unifier (mgu) di due termini della logica del primo ordine, descrivendo in pseudocodice un algoritmo in grado di calcolare il mgu di due termini

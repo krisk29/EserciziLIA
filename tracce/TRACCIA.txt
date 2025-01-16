@@ -1,0 +1,17 @@
+Parte 1:
+1) di che tipo è l'espressione map(+1)
+2) definire una funzione che data una liste di liste di interi, restituisce una lista in cui l-esimo elemento è la somma dall'i-esima lista
+3) definire una funzione che prende due liste l1 e l2 e restituisce la lista contenente gli elementi di l1 che non sono presenti in l2
+
+Parte 2:
+1) dare la definizione di Logic entailment e descrivere l'algoritmo di logical entailmnet tra due espressioni proposizionali
+2) definire una funzione che prende due liste l1 e l2 e restituisce true se L2 può essere ottenuta rimuovendo alcuni elementi da l1
+3) dati i predicati
+femmina(nome).
+maschio(nome).
+Persona(nome età)
+Amico(nome, nome)
+Definire i predicati:
+Tuttefemmine(X) se X ha solo amici femmine
+Amicistessaeta(X) se X ha Una coppia di amici della stessa età 
+Comuni(X,Y) se se l'insieme di amici di X coincide con Y
